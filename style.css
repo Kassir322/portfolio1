@@ -331,3 +331,25 @@ body {
   font-weight: 700;
   color: #fff;
 }
+
+/*Work =========================*/
+
+.work {
+  height: 1036px;
+  background-color: #fff;
+  padding: 52px;
+}
+
+.work__title {
+  height: 137px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work__title h1 {
+  font-size: 40px;
+  color: #3a3a3a;
+  margin: 0 auto;
+}
