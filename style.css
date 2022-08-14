@@ -309,10 +309,23 @@ body {
   margin: 0 auto;
 }
 
+.skills__circle__row__upper {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1070px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
 .skills__circle__row {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 772px;
+  width: 100%;
 }
 
 .skills__circle__container {
@@ -321,6 +334,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin: 10px;
 }
 
 .skills__circle__container img {
@@ -486,13 +500,25 @@ body {
 
 /*Media =========================*/
 
+@media (max-width: 1400px) {
+  /*Portfolio =========================*/
+
+  .portfolio__pictures_container {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1200px) {
+  /*Header =========================*/
+
   .nav__link {
     margin-left: 30px;
   }
 }
 
 @media (max-width: 991px) {
+  /*Header =========================*/
+
   .nav {
     display: none;
   }
@@ -500,6 +526,19 @@ body {
   .burger {
     display: block;
   }
+
+  /*Intro =========================*/
+
+  .intro {
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .intro__footer {
+    position: inherit;
+  }
+
+  /*About =========================*/
 
   .about {
     height: auto;
@@ -512,6 +551,34 @@ body {
   .about__card {
     width: 60%;
     margin-bottom: 20px;
+  }
+
+  /*Portfolio =========================*/
+
+  .portfolio {
+    height: auto;
+    padding-bottom: 250px;
+  }
+
+  /*Skills =========================*/
+
+  .skills {
+    height: auto;
+  }
+
+  .skills__circle__row__upper {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skills__circle__row {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skills__circle__container {
+    width: 40%;
   }
 }
 
