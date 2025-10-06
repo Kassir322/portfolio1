@@ -1,245 +1,578 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>mat-focus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Jost:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="simple-adaptive-slider.css" />
   </head>
-  <style></style>
+
   <body>
-    <div class="header">
+    <!-- ============= Header ============================== -->
+    <header>
       <div class="container">
         <div class="header__inner">
-          <div class="header__logo">
-            <div>Дмитрий </div>
-            <div style="color: #bdff00">Сенцов</div>
-          </div>
-          <nav class="nav">
-            <a class="nav__link" href="#">В начало</a>
-            <a class="nav__link" href="#">Обо мне</a>
-            <a class="nav__link" href="#">Портфолио</a>
-            <a class="nav__link" href="#">Мои навыки</a>
-            <a class="nav__link" href="#">Связаться</a>
-          </nav>
-          <div class="burger">Menu</div>
+          <a href="#">
+            <img class="header__logo" src="png/logo.png" alt="" />
+          </a>
+          <a class="anchor" href="#about">О нас</a>
+          <a class="anchor" href="#teacher">Преподаватель</a>
+          <a class="anchor" href="#price">Стоимость</a>
+          <a class="anchor" href="#reviews">Отзывы</a>
+          <a class="anchor" href="#footer">
+            <div class="phone__link">
+              <img src="png/phone.png" alt="" />
+              8 (919) 746-10-76
+            </div>
+          </a>
         </div>
       </div>
-    </div>
-    <div class="intro">
+    </header>
+    <!-- ============= Tittle ============================== -->
+    <div class="tittle" id="containerTitle">
       <div class="container">
-        <div class="intro__container">
-          <p class="intro__first">Hello I'm Chad</p>
-          <p class="intro__second">WEB DESIGNER / DEVELOPER</p>
-          <p class="intro__third">
-            To be a part of company that indulges professional growth which
-            provides challenging and rewarding career while allowing me to
-            utilize my knowledge and skills.
-          </p>
+        <img class="mat_focus_bloom" src="png/mat_focus_bloom.png" alt="" />
+        <div class="tittle__inner">
+          <div class="tittle__container">
+            <h1 class="tittle__main">MAT<br />FOCUS</h1>
+            Учите уроки правильно
+          </div>
+          <div class="tittle__brain">
+            <img src="png/main_pic.png" alt="" />
+          </div>
         </div>
-      </div>
-      <div class="intro__footer">
-        <img src="wave.png" alt="" />
+        <a class="more__button anchor" href="#about">
+          Подробнее
+          <img src="png/arrow.png" alt="" />
+        </a>
       </div>
     </div>
-    <div class="about">
+    <!-- ============= About ============================== -->
+    <div id="about" class="about">
       <div class="container">
         <div class="about__inner">
-          <h1 class="about__title">About Me</h1>
-          <div class="cards">
+          <img class="about_bloom_left" src="png/about_bloom_left.png" alt="" />
+          <img
+            class="about_bloom_right"
+            src="png/about_bloom_right.png"
+            alt=""
+          />
+
+          <div class="about__tittle__container">
+            <h1 class="about__tittle">О НАС</h1>
+            <h2 class="about__tagline">НАУЧИТЬ <br />МОЖНО?</h2>
+            <img class="about__union" src="png/union.png" alt="" />
+          </div>
+          <div class="about__tagline__continue">
+            МОЖНО НАУЧИТЬСЯ!
+            <img class="shapka" src="png/shapka.png" alt="" />
+          </div>
+          <div class="about__card__container">
             <div class="about__card">
-              <div class="card__img">
-                <img src="education.png" alt="" />
-              </div>
+              <img
+                src="png/about_left_top.png"
+                alt=""
+                class="about__left__top"
+              />
+              <img
+                src="png/about_left_bottom.png"
+                alt=""
+                class="about__left__bottom"
+              />
+              <img
+                src="png/about_right_bottom.png"
+                alt=""
+                class="about__right__bottom"
+              />
               <div class="about__card__text">
-                <h1 class="card__title">EDUCATION</h1>
-                <p>City of Malabon University</p>
-                <p>Bachelor of Science in Information Technology</p>
-                <p>2014-2018</p>
+                Мы поможем, <br />
+                если у ребенка<br />
+                есть пробелы<br />
+                в знаниях по<br />
+                предмету, низкая<br />
+                успеваемость,<br />
+                ребенку не<br />
+                интересно учиться
               </div>
             </div>
             <div class="about__card">
-              <div class="card__img">
-                <img src="work.png" alt="" />
-              </div>
+              <img
+                src="png/about_left_top.png"
+                alt=""
+                class="about__left__top"
+              />
+              <img
+                src="png/about_left_bottom.png"
+                alt=""
+                class="about__left__bottom"
+              />
+              <img
+                src="png/about_right_bottom.png"
+                alt=""
+                class="about__right__bottom"
+              />
               <div class="about__card__text">
-                <h1 class="card__title">WORK EXP</h1>
-                <p>3 Years Working Experience at Online Thinkers Technology</p>
-                <p style="margin-bottom: 20px">as Web Developer</p>
-                <p>1 Year Working Experience at QX INFORMATION TECH CORP</p>
-                <p>as Web Designer</p>
+                В ходе занятий<br />
+                ребенок <br />раскрепощается,<br />
+                начинает верить в <br />
+                себя, у него<br />
+                проявляется<br />
+                характер и сила<br />
+                воли
               </div>
             </div>
             <div class="about__card">
-              <div class="card__img">
-                <img src="hobbies.png" alt="" />
-              </div>
+              <img
+                src="png/about_left_top.png"
+                alt=""
+                class="about__left__top"
+              />
+              <img
+                src="png/about_left_bottom.png"
+                alt=""
+                class="about__left__bottom"
+              />
+              <img
+                src="png/about_right_bottom.png"
+                alt=""
+                class="about__right__bottom"
+              />
               <div class="about__card__text">
-                <h1 class="card__title">HOBBIES</h1>
-                <p>Music, Games, Movies, Drawing, Web Development/Design,</p>
-                <p>Blockchain & Adventure</p>
+                В результате<br />
+                подготовки<br />
+                повышается<br />
+                успеваемость,<br />
+                возрастает интерес<br />
+                к дальнейшему<br />
+                изучению<br />
+                предмета
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="portfolio">
+    <!-- ============= Teacher ============================== -->
+    <div id="teacher" class="teacher">
       <div class="container">
-        <div class="portfolio__title">
-          <h1>My Portfolio</h1>
-        </div>
-        <div class="portfolio__pictures_container">
-          <img class="portfolio__picture" src="pic1.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="skills">
-      <div class="container">
-        <div class="skills__inner">
-          <div class="skills__title">
-            <h1>My Skills</h1>
-          </div>
-          <div class="skills__circle__row__upper">
-            <div class="skills__circle__container">
-              <img src="C.png" alt="" />
-              <span>C</span>
-              <p>90%</p>
+        <h1 class="teacher__tittle ttl-blue">Наш преподаватель</h1>
+        <h1 class="teacher__tittle ttl-orange">Елена Владимировна Пака</h1>
+        <div class="teacher__about">
+          <div class="teacher__about__container">
+            <div class="teacher__about__left">
+              <img src="png/teacher.png" alt="" />
+              <div class="teacher__about__left__text">
+                Педагог высшей <br />
+                квалификационной категории
+              </div>
             </div>
-            <div class="skills__circle__container">
-              <img src="HTML.png" alt="" />
-              <span>HTML5</span>
-              <p>95%</p>
-            </div>
-            <div class="skills__circle__container">
-              <img src="CSS.png" alt="" />
-              <span>CSS3</span>
-              <p>85%</p>
-            </div>
-            <div class="skills__circle__container">
-              <img src="JS.png" alt="" />
-              <span>Java Script</span>
-              <p>80%</p>
+            <div class="teacher__about__right">
+              <ul>
+                <li>
+                  <p>Репетитор по математике, алгебре, геометрии</p>
+                </li>
+                <li>
+                  <p>
+                    40 лет опыта работы позволяет легко и доступно донести
+                    знания детям
+                  </p>
+                </li>
+                <li><p>Обучение проходит в комфортной обстановке</p></li>
+              </ul>
             </div>
           </div>
-          <div class="skills__circle__row">
-            <div class="skills__circle__container">
-              <img src="SQL.png" alt="" />
-              <span>SQL</span>
-              <p>90%</p>
-            </div>
-            <div class="skills__circle__container">
-              <img src="RJS.png" alt="" />
-              <span>ReactJS</span>
-              <p>70%</p>
-            </div>
-            <div class="skills__circle__container">
-              <img src="EJS.png" alt="" />
-              <span>ExpressJS</span>
-              <p>50%</p>
-            </div>
+          <div class="about__btn__container">
+            <a class="about__btn" href="#openModalQualification">
+              КВАЛИФИКАЦИЯ
+            </a>
+            <a class="about__btn" href="#openModalMethods">
+              МЕТОДЫ <br />
+              ОБУЧЕНИЯ
+            </a>
+            <a class="about__btn" href="#openModalTerms">
+              УСЛОВИЯ <br />
+              ЗАНЯТИЙ
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="work">
+    <!-- ============= Price ============================== -->
+    <div id="price" class="price">
       <div class="container">
-        <div class="work__title">
-          <h1>My Other Works</h1>
-        </div>
-        <div class="card__container">
-          <img src="work1.png" alt="" />
-          <img src="work2.png" alt="" />
-          <img src="work3.png" alt="" />
-          <img src="work4.png" alt="" />
-          <img src="work5.png" alt="" />
-          <img src="work6.png" alt="" />
-          <img src="work7.png" alt="" />
-          <img src="work8.png" alt="" />
+        <h1 class="price__tittle">
+          ВАРИАНТЫ ОБУЧЕНИЯ, <br />
+          УДОБНЫЕ ДЛЯ ВАС
+        </h1>
+        <div class="price__card__container">
+          <div class="price__card bg-lblue">
+            <h2 id="firstPriceTitle" class="price__card__tittle l-blue">
+              ИНДИВИДУАЛЬНЫЕ <br />
+              ЗАНЯТИЯ
+            </h2>
+            <h2 id="secondPriceTitle" class="price__card__tittle l-blue">
+              ИНДИВИДУ-АЛЬНЫЕ <br />
+              ЗАНЯТИЯ
+            </h2>
+            <h1 class="price__card__pricing l-blue">800</h1>
+            <span class="price__card__text l-blue"
+              >рублей <br />
+              в час</span
+            >
+            <a
+              id="typeIndividual"
+              class="price__card__button"
+              href="#openModalBuy"
+              >Записаться</a
+            >
+            <img class="price-left" src="png/girl_card.png" alt="" />
+          </div>
+          <div class="price__card bg-dblue">
+            <h2 class="price__card__tittle d-blue">ЗАНЯТИЯ В ГРУППЕ</h2>
+            <h1 class="price__card__pricing d-blue">600</h1>
+            <span class="price__card__text d-blue"
+              >рублей <br />
+              в час</span
+            >
+            <a id="typeGroup" class="price__card__button" href="#openModalBuy"
+              >Записаться</a
+            >
+            <img class="price-right" src="png/gilr_boy_card.png" alt="" />
+          </div>
+          <div class="price__card bg-lblue" style="background-color: #bddeff">
+            <h2 id="firstPriceTitleTeacher" class="price__card__tittle l-blue">
+              ОБУЧЕНИЕ <br />
+              РЕПЕТИТОРСТВУ
+            </h2>
+            <h2 id="secondPriceTitleTeacher" class="price__card__tittle l-blue">
+              ОБУЧЕНИЕ <br />
+              РЕПЕТИ-ТОРСТВУ
+            </h2>
+            <h1 class="price__card__pricing l-blue">1000</h1>
+            <span class="price__card__text l-blue"
+              >рублей <br />
+              в час</span
+            >
+            <a id="typeTeacher" class="price__card__button" href="#openModalBuy"
+              >Записаться</a
+            >
+            <img class="price-left" src="png/teacher_card.png" alt="" />
+            <img
+              src="png/price_bloom_bottom.png"
+              alt=""
+              class="price-bottom-bloom"
+            />
+          </div>
+          <img
+            class="price-left-bloom"
+            src="png/price_bloom_left_top.png"
+            alt=""
+          />
+          <img
+            src="png/price_bloom_right_top.png"
+            alt=""
+            class="price-right-bloom"
+          />
         </div>
       </div>
     </div>
-    <div class="map">
-      <img src="map.png" alt="" />
+    <!-- ============= Reviews ============================== -->
+    <div id="reviews" class="reviews">
+      <div class="container" style="height: fit-content">
+        <h1 class="reviews__tittle" id="firstTitle">Что говорят ученики</h1>
+        <h1 class="reviews__tittle" id="secondTitle">Отзывы</h1>
+      </div>
+      <div class="itcss">
+        <div class="itcss__wrapper">
+          <div class="itcss__items">
+            <div class="itcss__item">
+              <div class="itcss_item__inner">
+                <div class="review__card">
+                  <div class="review__card__left">
+                    <div class="review__card__left__text">
+                      Пришел с нулевыми знаниями, ненавидя точные науки, в
+                      частности математику. Однако по прошествии занятий из
+                      математики вышел в философию и нашел себя!
+                    </div>
+                    <img src="png/quotes.png" alt="" />
+                    <div class="review__card__left__name">Савелий Дончук</div>
+                  </div>
+                  <div class="review__card__img">
+                    <img src="png/person1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="itcss__item">
+              <div class="itcss_item__inner">
+                <div class="review__card">
+                  <div class="review__card__left">
+                    <div class="review__card__left__text">
+                      Елена Владимировна творит чудеса, в году у сына выходили
+                      тройки по алгебре и геометрии. Она за очень короткий срок
+                      (2 месяца по 2-3 занятия в неделю) подтянула его по
+                      предметам и он ОГЭ написал на твёрдую 4. Объясняет
+                      материал доступно и доходчиво. Спасибо Вам большое,
+                      благодаря этим занятиям получилось поступить на бюджет в
+                      колледж СТГАУ.
+                    </div>
+                    <img src="png/quotes.png" alt="" />
+                    <div class="review__card__left__name">Таисия Шевченко</div>
+                  </div>
+                  <div class="review__card__img">
+                    <img src="png/person2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="itcss__item">
+              <div class="itcss_item__inner">
+                <div class="review__card">
+                  <div class="review__card__left">
+                    <div class="review__card__left__text">
+                      Елена Владимировна – прекрасный педагог. Отлично
+                      объясняет, предоставляет много полезного материала.
+                      Занималась у нее с 7 класса, за это время знания с 3
+                      поднялись до 5. Также помогла качественно подготовиться к
+                      ОГЭ. Всем советую этого преподавателя.
+                    </div>
+                    <img src="png/quotes.png" alt="" />
+                    <div class="review__card__left__name">Юлия Андреева</div>
+                  </div>
+                  <div class="review__card__img">
+                    <img src="png/person3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="itcss__item">
+              <div class="itcss_item__inner">
+                <div class="review__card">
+                  <div class="review__card__left">
+                    <div class="review__card__left__text">
+                      Очень сильно благодарна Елене Владимировне, за то что
+                      буквально за 2 месяца подтянула меня по математике.
+                      Благодаря ей, я cдала математику на «4». Спасибо большое.
+                    </div>
+                    <img src="png/quotes.png" alt="" />
+                    <div class="review__card__left__name">Милена Гзиранц</div>
+                  </div>
+                  <div class="review__card__img">
+                    <img src="png/person4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+        <div class="itcss__btn__container">
+          <a
+            class="itcss__btn itcss__btn_prev"
+            href="#"
+            role="button"
+            data-slide="prev"
+          ></a>
+          <a
+            class="itcss__btn itcss__btn_next"
+            href="#"
+            role="button"
+            data-slide="next"
+          ></a>
+        </div>
+        <img src="png/reviews_bloom.png" alt="" class="reviews__bloom" />
+      </div>
+      <img src="png/reviews_circle.png" alt="" class="reviews__circle" />
     </div>
-    <div class="contact">
-      <div class="container">
-        <div class="contact__inner">
-          <div class="contact__row">
-            <div class="contact__logo">
-              <img style="margin-bottom: 50px" src="logo.png" alt="" />
-              <div style="display: flex">
-                <div style="color: #fff">Richard </div>
-                <div style="color: #bdff00">Santos</div>
-              </div>
-            </div>
-            <div class="contact__links first_link">
-              <h1>QUICKLINKS</h1>
-              <div class="contact__navigation">
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">portfolio</a>
-                <a href="#">my skills</a>
-                <a href="#">contact me</a>
-              </div>
-            </div>
-            <div class="contact__links second_link">
-              <h1>CONTACT ME</h1>
-              <div style="margin-bottom: 45px">
-                <span class="contact__highlight">Email:</span>
-                <span>chadskie02@gmail.com</span>
-              </div>
-              <div>
-                <span class="contact__highlight">Mobile Number:</span>
-                <span style="font-size: 17px"> 09217229031 / 09760838629</span>
-              </div>
-            </div>
-            <div class="contact__links third_link">
-              <h1>LOCATION</h1>
-              <div style="margin-bottom: 45px">
-                <span class="contact__highlight">Permanent Address:</span>
-                <span
-                  >#29 int. M.H. Del Pilar st., Brgy Tugatog, Malabon City</span
-                >
-              </div>
-              <div>
-                <span class="contact__highlight">Present Address:</span>
-                <span style="font-size: 17px">
-                  BLK. 55 Lot 11 Phase 3 Las Palmas Sub. Caypombo Sta. Maria
-                  Bulacan</span
-                >
-              </div>
-            </div>
+    <!-- ============= Popup ============================== -->
+    <div id="openModalQualification" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Квалификация</h3>
+            <a href="#close" title="Close" class="close">×</a>
           </div>
-          <div class="img__links">
-            <a class="img__link" href="#">
-              <img style="width: 100%" src="facebook.png" alt="" />
-            </a>
-            <a class="img__link" href="#">
-              <img src="ldn.png" alt="" />
-            </a>
-            <a class="img__link" href="#">
-              <img src="google.png" alt="" />
-            </a>
-            <a class="img__link" href="#">
-              <img src="twitter.png" alt="" />
-            </a>
-            <a class="img__link" href="#">
-              <img src="tg.png" alt="" />
-            </a>
+          <div class="modal-body">
+            <ul>
+              <li>40 лет опыта работы</li>
+              <li>3 золотых медали, 4 серебрянных медали</li>
+              <li>почетный работник образования РФ</li>
+            </ul>
           </div>
-          <div class="contact__footer">
-            <h1>Copyright © 2022 RS All rights reserved</h1>
+        </div>
+      </div>
+    </div>
+    <div id="openModalMethods" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">При обучении применяются:</h3>
+            <a href="#close" title="Close" class="close">×</a>
           </div>
+          <div class="modal-body">
+            <ul>
+              <li>технологии опорных конспектов</li>
+              <li>блочно-модульная система</li>
+              <li>карточная система</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="openModalTerms" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">где проходит работа?</h3>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>технологии опорных конспектов</li>
+              <li>блочно-модульная система</li>
+              <li>карточная система</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="openModalBuy" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">заполните данные</h3>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <form class="modal-body tg__form">
+            <input name="name" type="text" placeholder="ФИО" />
+            <input name="phone" type="tel" placeholder="Номер телефона" />
+            <input name="email" type="email" placeholder="E-mail" />
+            <input type="submit" id="sendData" />
+          </form>
         </div>
       </div>
     </div>
   </body>
 </html>
+
+<script defer src="simple-adaptive-slider.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+  var typeName;
+  document.addEventListener("DOMContentLoaded", () => {
+    // инициализация слайдера
+    new ItcSimpleSlider(".itcss", {
+      loop: true,
+      autoplay: false,
+      interval: 5000,
+      swipe: true,
+    });
+  });
+
+  $(function () {
+    $(".anchor").click(function () {
+      var target = $(this).attr("href");
+      $("html, body").animate(
+        { scrollTop: $(target).offset().top - 110 },
+        1000
+      );
+      return false;
+    });
+  });
+
+  $("#typeIndividual").click(function () {
+    typeName = "Индивидуальное занятие";
+    return true;
+  });
+
+  $("#typeGroup").click(function () {
+    typeName = "Занятие в группе";
+    return true;
+  });
+
+  $("#typeGroup").click(function () {
+    typeName = "Занятие в группе";
+    return true;
+  });
+
+  $("#typeTeacher").click(function () {
+    typeName = "Обучение репетиторству";
+    return true;
+  });
+
+  $(".tg__form").submit(function () {
+    event.stopPropagation();
+    event.preventDefault();
+    form = this;
+    data = new FormData();
+    data.append("Имя", $('[name="name"]', form).val());
+    data.append("Телефон", $('[name="phone"]', form).val());
+    data.append("Почта", $('[name="email"]', form).val());
+    data.append("Тип обучения", typeName);
+
+    if (
+      data.get("Имя") != "" &&
+      data.get("Телефон") != "" &&
+      data.get("Почта") != ""
+    ) {
+      $.ajax({
+        url: "ajax.php",
+        type: "POST",
+        data: data,
+        cache: false,
+        dataType: "json",
+        processData: false,
+        contentType: false,
+        xhr: function () {
+          let myXhr = $.ajaxSettings.xhr();
+
+          if (myXhr.upload) {
+            myXhr.upload.addEventListener(
+              "progress",
+              function (e) {
+                if (e.lengthComputable) {
+                  let percentage = (e.loaded / e.total) * 100;
+                  percentage = percentage.toFixed(0);
+                  $(".submit", form).html(percentage + "%");
+                }
+              },
+              false
+            );
+          }
+
+          return myXhr;
+        },
+        error: function (jqXHR, textStatus) {
+          // Тут выводим ошибку
+        },
+        complete: function () {
+          // Тут можем что-то делать ПОСЛЕ успешной отправки формы
+          console.log("Complete");
+          form.reset();
+        },
+      });
+    } else {
+      window.alert("Заполните все поля!");
+    }
+
+    return false;
+  });
+
+  // $(document).ready(function () {
+  //   $.ajax({
+  //     url: "onload.php",
+  //     cache: false,
+  //     dataType: "json",
+  //     processData: false,
+  //     contentType: false,
+  //   });
+  // });
+</script>

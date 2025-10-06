@@ -1,0 +1,146 @@
+/**
+  * SimpleAdaptiveSlider by itchief (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
+  * Copyright 2020 - 2022 Alexander Maltsev
+  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+  */
+
+/* стили для корневого элемента слайдера */
+.itcss {
+  position: relative;
+  min-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+  position: relative;
+  overflow: hidden;
+  /* background-color: #eee; */
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+  display: flex;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  margin-bottom: 60px;
+}
+
+/* стили для элементов */
+.itcss__item {
+  position: relative;
+  flex: 0 0 100%;
+  /* max-width: 100%; */
+  min-width: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.itcss_item__inner {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* кнопки Prev и Next */
+
+.itcss__btn__container {
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+  width: 100%;
+  justify-content: center;
+}
+
+.itcss__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 22px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.4;
+  user-select: none;
+}
+
+.itcss__btn_hide {
+  display: none;
+}
+
+.itcss__btn:hover {
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  opacity: 1;
+}
+
+.itcss__btn_prev {
+}
+
+.itcss__btn_next {
+}
+
+.itcss__btn::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.itcss__btn_prev::before {
+  background-image: url(png/arrow_btn_left.png);
+}
+
+.itcss__btn_next::before {
+  background-image: url(png/arrow_btn_right.png);
+}
+
+/* Индикаторы */
+.itcss__indicators {
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  padding-left: 0;
+  list-style: none;
+  user-select: none;
+  z-index: 1000;
+}
+
+.itcss__indicator {
+  flex: 0 1 auto;
+  width: 30px;
+  height: 2px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: #bddeff;
+  /* background-clip: padding-box; */
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.itcss__indicator_active {
+  background-color: #3550aa;
+}
+
+/* класс для отключения transition */
+.transition-none {
+  transition: none;
+}
+
+@media (max-width: 870px) {
+  .itcss__btn__container {
+    display: none;
+  }
+}
